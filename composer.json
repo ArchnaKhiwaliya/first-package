@@ -1,0 +1,36 @@
+{
+    "name": "archnakhiwaliya/first-package",
+    "description": "This is my first package in laravel",
+    "keywords": ["first package"],
+    "authors": [
+        {
+            "name": "Archna Khiwaliya",
+            "email": "archnakhiwaliya@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "ArchnaKhiwaliya\\FirstPackage\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "ArchnaKhiwaliya\\FirstPackage\\Tests\\": "tests/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "ArchnaKhiwaliya\\FirstPackage\\FirstPackageServiceProvider",
+                "ArchnaKhiwaliya\\FirstPackage\\RouteServiceProvider"
+            ],
+            "aliases":{
+                "FirstPackage": "ArchnaKhiwaliya\\FirstPackage\\Facades\\FirstPackage"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.11"
+    }
+}
