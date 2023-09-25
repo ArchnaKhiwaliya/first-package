@@ -2,7 +2,7 @@
     "name": "archnakhiwaliya/first-package",
     "description": "This is my first package in laravel",
     "keywords": ["first package"],
-    "license": "MIT",
+    "license": "MIT", 
     "authors": [
         {
             "name": "Archna Khiwaliya",
